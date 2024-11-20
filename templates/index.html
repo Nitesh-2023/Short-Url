@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish URL Shortener</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>🔗 URL Shortener</h1>
+            <p>Turn long URLs into simple and shareable links!</p>
+        </header>
+        <main>
+            <form action="/url" method="post" id="url-form">
+                <input type="url" name="url" id="long-url" placeholder="Paste your long URL here..." required>
+                <button type="submit">Shorten URL</button>
+            </form>
+            <div >
+                <p>Your shortened URL: <a id="short-url" href="{{link}}" target="_blank">{{link}}</a></p>
+                
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 URL Shortener. Made by Nitesh.</p>
+        </footer>
+    </div>
+   
+</body>
+</html>
